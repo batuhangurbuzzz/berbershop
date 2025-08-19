@@ -15,18 +15,22 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link active" href="{{route('index')}}">Anasayfa</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{route('about')}}">Hakkımızda</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
-                                                 data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                                                 aria-expanded="false">Hizmetlerimiz <i class="ti-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        @if(isset($services) && !empty($services))
+                @if(isset($services) && !empty($services))
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                                                     data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                     aria-expanded="false">Hizmetlerimiz <i
+                                class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
                             @foreach($services as $service)
                                 <li><a href="{{route('service', $service->slug)}}"
                                        class="dropdown-item"><span>{{$service->name}}</span></a></li>
                             @endforeach
-                        @endif
-                    </ul>
-                </li>
+                        </ul>
+                    </li>
+                @else
+                    <li class="nav-item"><a class="nav-link" href="{{route('services')}}">Hizmetlerimiz</a></li>
+                @endif
+
                 <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">İletişim</a></li>
             </ul>
         </div>

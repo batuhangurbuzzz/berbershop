@@ -14,4 +14,16 @@ class PageController extends Controller
     {
         return view('frontend.pages.about');
     }
+    public function contact()
+    {
+        return view('frontend.pages.contact');
+    }
+    public function services()
+    {
+        return view('frontend.pages.services');
+    }
+    public function service($slug)
+    {
+        return view('frontend.pages.services');
+    }
 }

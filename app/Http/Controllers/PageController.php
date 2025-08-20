@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -10,20 +11,56 @@ class PageController extends Controller
     {
         return view('frontend.pages.index');
     }
+
     public function about()
     {
-        return view('frontend.pages.about');
+        $breadcrumbs = [
+            [
+                'name' => __('Hakkımızda'),
+                'url' => route('about')
+            ],
+        ];
+        $about = About::where('lang', app()->getLocale())->first();
+        return view('frontend.pages.about', compact('breadcrumbs', 'about'));
     }
+
     public function contact()
     {
-        return view('frontend.pages.contact');
+
+        $breadcrumbs = [
+            [
+                'name' => __('İletişim'),
+                'url' => route('contact')
+            ],
+        ];
+        return view('frontend.pages.contact', compact('breadcrumbs'));
     }
+
     public function services()
     {
-        return view('frontend.pages.services');
+
+        $breadcrumbs = [
+            [
+                'name' => __('Hizmetler'),
+                'url' => route('services')
+            ],
+        ];
+        return view('frontend.pages.services',compact('breadcrumbs'));
     }
+
     public function service($slug)
     {
-        return view('frontend.pages.services');
+
+        $breadcrumbs = [
+            [
+                'name' => __('Hizmetlerimiz'),
+                'url' => route('services')
+            ],
+            [
+                'name' => __('Hizmet Detayı'),
+                'url' => route('service', $slug)
+            ],
+        ];
+        return view('frontend.pages.service',compact('breadcrumbs'));
     }
 }

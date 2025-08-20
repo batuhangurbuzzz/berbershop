@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class About extends Model
+class Slider extends Model
 {
-    protected $fillable = ['lang', 'name', 'content', 'vision', 'mission', 'image'];
-
+    protected $fillable = ['lang', 'name', 'content', 'button_text', 'button_link', 'image', 'status'];
 
     protected $appends = ['image_url'];
+
     public function getImageUrlAttribute()
     {
         return asset($this->image);

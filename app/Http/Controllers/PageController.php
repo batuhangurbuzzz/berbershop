@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function index()
     {
-        return view('frontend.pages.index');
+        $slider = Slider::where('lang',app()->getLocale())->where('status',1)->first();
+        return view('frontend.pages.index', compact('slider'));
     }
 
     public function about()

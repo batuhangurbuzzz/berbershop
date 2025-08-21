@@ -72,29 +72,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="item"><span class="icon icon icon-icon-1-6"></span>
+                    <div class="item"><span class="{{$settings['home_hero_image_1']}}"></span>
                         <div class="cont">
-                            <h5>Cuts</h5>
-                            <p>Cuts ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis
-                                monte.</p>
+                            <h5>{{$settings['home_hero_title_1']}}</h5>
+                            <p>{{$settings['home_hero_description_1']}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="item"><span class="icon icon-icon-1-3"></span>
+                    <div class="item"><span class="{{$settings['home_hero_image_2']}}"></span>
                         <div class="cont">
-                            <h5>Fades</h5>
-                            <p>Fades ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis
-                                monte.</p>
+                            <h5>{{$settings['home_hero_title_2']}}</h5>
+                            <p>{{$settings['home_hero_description_2']}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="item"><span class="icon icon-icon-1-1"></span>
+                    <div class="item"><span class="{{$settings['home_hero_image_3']}}"></span>
                         <div class="cont">
-                            <h5>Shaves</h5>
-                            <p>Shaves ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis
-                                monte.</p>
+                            <h5>{{$settings['home_hero_title_3']}}</h5>
+                            <p>{{$settings['home_hero_description_3']}}</p>
                         </div>
                     </div>
                 </div>

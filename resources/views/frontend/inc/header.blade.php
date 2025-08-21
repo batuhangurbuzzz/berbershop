@@ -13,12 +13,12 @@
         <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="{{route('index')}}">Anasayfa</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{route('about')}}">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link active" href="{{route('index')}}">{{__('Anasayfa')}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('about')}}">{{__('Hakkımızda')}}</a></li>
                 @if(isset($services) && !empty($services))
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
                                                      data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                                                     aria-expanded="false">Hizmetlerimiz <i
+                                                     aria-expanded="false">{{__('Hizmetlerimiz')}} <i
                                 class="ti-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             @foreach($services as $service)
@@ -28,11 +28,15 @@
                         </ul>
                     </li>
                 @else
-                    <li class="nav-item"><a class="nav-link" href="{{route('services')}}">Hizmetlerimiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('services')}}">{{__('Hizmetlerimiz')}}</a></li>
                 @endif
 
-                <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">{{__('İletişim')}}</a></li>
             </ul>
+            <div class="language-selector">
+                <a href="{{route('language', 'tr')}}">TR</a>
+                <a href="{{route('language', 'en')}}">EN</a>
+            </div>
         </div>
     </div>
 </nav>

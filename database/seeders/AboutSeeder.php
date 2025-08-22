@@ -19,7 +19,7 @@ class AboutSeeder extends Seeder
             'content' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
             'vision' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             'mission'=> "Lorem Ipsum is simply dummy text of the printing and ",
-            'image' => 'img/about/company.jpg'
+            'image' => 'img/about3.jpg'
         ]);
         About::create([
             'lang' => 'en',
@@ -27,7 +27,7 @@ class AboutSeeder extends Seeder
             'content' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
             'vision' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             'mission'=> "Lorem Ipsum is simply dummy text of the printing and ",
-            'image' => 'img/about/company-en.jpg'
+            'image' => 'img/about3.jpg'
         ]);
     }
 }

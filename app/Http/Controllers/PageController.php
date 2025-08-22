@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use App\Models\Category;
+use App\Models\MainSetting;
 use App\Models\Slider;
 use Illuminate\Http\Request;
 
@@ -11,7 +13,9 @@ class PageController extends Controller
     public function index()
     {
         $slider = Slider::where('lang',app()->getLocale())->where('status',1)->first();
-        return view('frontend.pages.index', compact('slider'));
+        $about = About::where('lang',app()->getLocale())->first();
+        $categories = Category::where('lang',app()->getLocale())->where('status',1)->whereNull('parent_id')->get();
+        return view('frontend.pages.index', compact('slider', 'about', 'categories'));
     }
 
     public function about()

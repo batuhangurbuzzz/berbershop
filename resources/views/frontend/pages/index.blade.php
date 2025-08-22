@@ -23,52 +23,8 @@
             <a href="#" data-scroll-nav="1" class=""> <i class="ti-arrow-down"></i> </a>
         </div>
     </div>
-    <!-- About -->
-    <section class="about section-padding" data-scroll-index="1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-30">
-                    <div class="section-head mb-20">
-                        <div class="section-subtitle">Since 2006</div>
-                        <div class="section-title">Perukar Barber Shop</div>
-                    </div>
-                    <p>Come experience a unique and edgy barbershop for all your hair and beard needs. ravida haretra
-                        nuam
-                        enim mi obortis eset uctus enec accumsan eu justo alisuame amet auctor orci donec vitae vehicula
-                        risus.</p>
-                    <p>Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam
-                        sit
-                        amet auctor orci done vitae risus duise nisan sapien silver on the accumsan id mauris apien.</p>
-                    <ul class="about-list list-unstyled mb-30">
-                        <li>
-                            <div class="about-list-icon"><span class="ti-check"></span></div>
-                            <div class="about-list-text">
-                                <p>We're professional and certified barbers</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="about-list-icon"><span class="ti-check"></span></div>
-                            <div class="about-list-text">
-                                <p>We use quality products to make you look perfect</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="about-list-icon"><span class="ti-check"></span></div>
-                            <div class="about-list-text">
-                                <p>We care about our customers satisfaction</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp"><img src="img/about2.jpg" alt=""
-                                                                                          class="mt-90 mb-30"></div>
-                <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp"><img src="img/about.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Services Box -->
-    <section class="services-box section-padding pt-0">
+    <section class="services-box section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -102,27 +58,16 @@
     <section class="about section-padding bg-darkbrown">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 mb-30 animate-box" data-animate-effect="fadeInLeft"><img src="img/about3.jpg"
+                <div class="col-md-5 mb-30 animate-box" data-animate-effect="fadeInLeft"><img src="{{asset($about->image_url)}}"
                                                                                               alt="">
                 </div>
                 <div class="col-md-7 valign mb-30 animate-box" data-animate-effect="fadeInRight">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-head mb-20">
-                                <div class="section-subtitle">17 Year of Experience</div>
-                                <div class="section-title white">Making people look awesome since 2006</div>
+                                <div class="section-title white">{{$about->name}}</div>
                             </div>
-                            <p>Come experience a unique and edgy barbershop for all your hair and beard needs. Vulputate
-                                ons
-                                amet ravida haretra nuam the drana miss uctus enec accumsan justo aliquam sit amet
-                                auctor
-                                orci done vitae risus duise nunc sapien.</p>
-                            <div class="about-bottom"><img src="img/signature.svg" alt="" class="image about-signature">
-                                <div class="about-name-wrapper">
-                                    <div class="about-rol">Barber, Founder</div>
-                                    <div class="about-name">Harold Brown</div>
-                                </div>
-                            </div>
+                            <p>{{$about->content}}</p>
                         </div>
                     </div>
                 </div>

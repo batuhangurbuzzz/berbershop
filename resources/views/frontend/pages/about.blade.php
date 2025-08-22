@@ -20,84 +20,32 @@
             </div>
         </div>
     </section>
-    <!-- Services Box -->
     <section class="services-box section-padding pt-0">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="item"><span class="icon icon icon-icon-1-6"></span>
+                    <div class="item"><span class="{{$settings['home_hero_image_1']}}"></span>
                         <div class="cont">
-                            <h5>Cuts</h5>
-                            <p>Cuts ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis
-                                monte.</p>
+                            <h5>{{$settings['home_hero_title_1']}}</h5>
+                            <p>{{$settings['home_hero_description_1']}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="item"><span class="icon icon-icon-1-3"></span>
+                    <div class="item"><span class="{{$settings['home_hero_image_2']}}"></span>
                         <div class="cont">
-                            <h5>Fades</h5>
-                            <p>Fades ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis
-                                monte.</p>
+                            <h5>{{$settings['home_hero_title_2']}}</h5>
+                            <p>{{$settings['home_hero_description_2']}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="item"><span class="icon icon-icon-1-1"></span>
+                    <div class="item"><span class="{{$settings['home_hero_image_3']}}"></span>
                         <div class="cont">
-                            <h5>Shaves</h5>
-                            <p>Shaves ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis
-                                monte.</p>
+                            <h5>{{$settings['home_hero_title_3']}}</h5>
+                            <p>{{$settings['home_hero_description_3']}}</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our History -->
-    <section class="about section-padding bg-darkbrown">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 mb-30 animate-box" data-animate-effect="fadeInLeft"><img src="img/about3.jpg"
-                                                                                              alt=""></div>
-                <div class="col-md-7 valign mb-30 animate-box" data-animate-effect="fadeInRight">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-head mb-20">
-                                <div class="section-subtitle">17 Year of Experience</div>
-                                <div class="section-title white">Making people look awesome since 2006</div>
-                            </div>
-                            <p>Come experience a unique and edgy barbershop for all your hair and beard needs. Vulputate
-                                ons amet ravida haretra nuam the drana miss uctus enec accumsan justo aliquam sit amet
-                                auctor orci done vitae risus duise nunc sapien.</p>
-                            <div class="about-bottom"><img src="img/signature.svg" alt="" class="image about-signature">
-                                <div class="about-name-wrapper">
-                                    <div class="about-rol">Barber, Founder</div>
-                                    <div class="about-name">Harold Brown</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Video -->
-    <section class="section-padding video-wrapper video bg-img bg-fixed" data-overlay-dark="4"
-             data-background="img/slider/5.jpg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="section-head text-center">
-                        <div class="section-title white">Watch Our Barbershop Promo Video</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <a class="vid" href="https://youtu.be/e2x0UXVU2yg">
-                        <div class="vid-butn"><span class="icon"><i class="ti-control-play"></i></span></div>
-                    </a>
                 </div>
             </div>
         </div>

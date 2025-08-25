@@ -14,4 +14,8 @@ Route::middleware(['setLocale','mainSettings'])->group(function () {
     Route::get(
         '/language/{lang}', [LanguageController::class, 'switchLang']
     )->name('language');
+
+    Route::get(
+        '/kategori/{slug}', [PageController::class, 'category']
+    )->name('kategori.detay');
 });

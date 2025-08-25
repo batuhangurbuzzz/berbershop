@@ -54,9 +54,9 @@ class CategorySeeder extends Seeder
                 ],
             ],
             [
-                'name' => 'Bakım',
+                'name' => 'Erkek Bakım',
                 'slug' => 'bakim',
-                'content' => 'Bakım Kategorisi',
+                'content' => 'Erkek Bakım Kategorisi',
                 'image' => 'img/team/b3.jpg',
                 'status' => 1,
                 'childrens' => []

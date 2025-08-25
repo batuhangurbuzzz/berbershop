@@ -69,4 +69,11 @@ class PageController extends Controller
         ];
         return view('frontend.pages.service',compact('breadcrumbs'));
     }
+
+    public function category($slug)
+    {
+        $category = Category::where('slug', $slug)->first();
+
+        return view('frontend.pages.category', compact('category'));
+    }
 }

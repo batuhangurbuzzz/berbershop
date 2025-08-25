@@ -58,8 +58,9 @@
     <section class="about section-padding bg-darkbrown">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 mb-30 animate-box" data-animate-effect="fadeInLeft"><img src="{{asset($about->image_url)}}"
-                                                                                              alt="">
+                <div class="col-md-5 mb-30 animate-box" data-animate-effect="fadeInLeft"><img
+                        src="{{asset($about->image_url)}}"
+                        alt="">
                 </div>
                 <div class="col-md-7 valign mb-30 animate-box" data-animate-effect="fadeInRight">
                     <div class="row">
@@ -235,66 +236,27 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="img/barber.jpg">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>Groom's Shave</h4>
+                @foreach($categories as $category)
+                    <div class="col-md-4">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{{asset($category->image)}}">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title">
+                                        <h4>{{$category->name}}</h4>
+                                    </div>
                                 </div>
+                                <div class="flip-overlay"></div>
                             </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Groom's Shave</h4>
-                                <p><i>Lorem nisl miss nestibulum nec odio duru the aucan ula orci varius natoque enatau
-                                        manis dis arturient monte.</i></p> <a href="#0"
-                                                                              class="button-2 mt-15">Appointment<span></span></a>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <h4>{{$category->name}}</h4>
+                                    <p><i>{{$category->content}}</i></p>
+                                    <a href="{{route('kategori.detay', $category->slug)}}" class="button-2 mt-15">Hemen Rezerve Edin<span></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="img/kids.jpg">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>Kids Cuts</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Kids Cuts</h4>
-                                <p><i>Lorem nisl miss nestibulum nec odio duru the aucan ula orci varius natoque enatau
-                                        manis dis arturient monte.</i></p> <a href="#0"
-                                                                              class="button-2 mt-15">Appointment<span></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="img/team/b3.jpg">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>Creative Barbers</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Creative Barbers</h4>
-                                <p><i>Lorem nisl miss nestibulum nec odio duru the aucan ula orci varius natoque enatau
-                                        manis dis arturient monte.</i></p> <a href="team.html" class="button-2 mt-15">Our
-                                    Team<span></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
